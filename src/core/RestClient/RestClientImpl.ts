@@ -32,6 +32,7 @@ export default class RestClientImpl extends BaseRestClientImpl implements RestCl
     }
 
     async getChartData(params: GetChartDataByCurrencyParams): Promise<GetChartDataByCurrencyResponse> {
+        // return this._call('GET', 'some-api-url' as Url)
         if (params.currency === 'USD') {
             // TODO Call real api
             return success(CHART_RESPONSE1)
@@ -41,11 +42,13 @@ export default class RestClientImpl extends BaseRestClientImpl implements RestCl
     }
 
     async getCurrencies(): Promise<CurrencyResponse> {
+        // return this._call('GET', 'some-api-url' as Url)
         // TODO Call real api
         return success(CURRENCIES_RESPONSE)
     }
 
     async getEvents(): Promise<GetEventsResponse> {
+        // return this._call('GET', 'some-api-url' as Url)
         // TODO Call real api
         return success(EVENTS_RESPONSE)
     }
