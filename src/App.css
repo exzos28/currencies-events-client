@@ -1,0 +1,36 @@
+@import 'antd/dist/antd.css';
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.content-container {
+    height: 100vh;
+}
+.content-container .ant-row {
+    height: 100%;
+}
+.content-container .ant-col {
+    height: 100%;
+}
+
+.chart-container {
+    padding: 0 15px;
+    z-index: 1;
+    position: relative;
+}
+
+.events-container {
+    height: 100%;
+    margin-left: 10px;
+    overflow-y: scroll;
+}
+
+.events-container .ant-list {
+    height: 100%;
+    margin-left: -24px;
+}
